@@ -22,9 +22,19 @@ function renderLetter(){
     document.querySelector('#Wins').innerHTML = "game";
   }
 }
+
 //keypress events 
-var playerinput = event.key();
+
+
+
+ $(document).ready(function() {
+
+  var captainPlanet = $(".captain-planet");
 console.log (playerinput);
-if (playerinput === 'a'){
-  alert('l');
-}
+$(document).keyup(function(e) {
+          
+
+  // Move Buttons (Keyboard Down)
+ 
+    captainPlanet.animate({ top: "+=200px" }, "normal");});
+});
